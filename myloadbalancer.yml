@@ -4,7 +4,9 @@ metadata:
   name: my-service-loadbalancer
 spec:
   selector:
-    app: my-loadbalancer
+    app: my-app
+  externalIPs:
+    - 192.168.1.100 # Node IP
   ports:
     - protocol: TCP
       port: 80
